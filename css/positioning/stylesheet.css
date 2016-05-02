@@ -1,0 +1,24 @@
+#dress {
+  margin: 150px 550px;
+}
+
+#octopus {
+  position: fixed;
+  top: 150px;
+  left: 550px;
+  z-index: -1;
+}
+
+#hat {
+  position: fixed;
+  top: 100px;
+  left: 530px;
+  z-index: 0;
+}
+
+#glasses {
+  position: fixed;
+  top: 250px;
+  left: 590px;
+  z-index: 1;
+}
