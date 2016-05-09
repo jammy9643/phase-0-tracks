@@ -1,9 +1,19 @@
-Using an Elevator:
+Using an Elevator
 
-- Approach a hallway where you see metal
+- Before entering elevator:
+    + Ask what floor number the robot is on.
+    + Ask what floor number the robot wants to go to.
+        * If the floor number is higher than the floor number it is on,
+        press the up arrow button.
+        * If the floor number is lower than the floor number it is on,
+        press the down arrow button.
+        * Else, do not press any arrow buttons (do nothing).
+- Enter elevator:
+    + Press the floor number the robot wants to go to.
+
 
 
 Brushing Your Teeth:
-- d
+- 
 
 
