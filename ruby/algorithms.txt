@@ -1,6 +1,63 @@
-Using an Elevator:
+Using an Elevator
 
-- 
-- 
+- Before entering elevator:
+    + Ask what floor number the robot is on.
+    + Ask what floor number the robot wants to go to.
+        * If the floor number is higher than the floor number it is on,
+        press the up arrow button.
+        * If the floor number is lower than the floor number it is on,
+        press the down arrow button.
+        * Else, do not press any arrow buttons, do not enter elevator, do nothing.
+- Enter elevator:
+    + When elevator door opens, enter.
+    + Turn to face the floor number panel.
+    + Press the floor number the robot wants to go to.
+    + Congratulate robot on riding its first elevator.
 
 
+
+Brushing Your Teeth:
+
+- Preparation:
+    + Go to a bathroom.
+    + Stand in front of the water faucet.
+    + Pickup cup with one hand.
+        * Turn on the water faucet with the non-cup hand.
+        * Move your cup hand to the water faucet.
+        * Fill cup with water.
+            - If water overfills the cup, move cup away from faucet.
+            - Else, continue to fill the cup with water.
+        * Turn off water faucet with non-cup hand.
+        * Put down the cup of water
+    + Pickup toothpaste with one hand.
+        * Open toothpaste with the non-toothpaste hand.
+        * Face toothpaste opening towards your non-toothpaste hand.
+    + Pickup toothbrush with the non-toothpaste hand.
+        * Hold the opposite end of the toothbrush bristle.
+        * Face toothbrush bristle up.
+        * Until toothpaste opening is on top of toothbrush bristle, continue to move toothpaste towards toothbrush.
+        * Squeeze toothpaste on to toothbrush.
+            - Until toothpaste amount is pea-size, continue to squeeze toothpaste on to toothbrush.
+        * Put down toothpaste.
+- Brush teeth:
+    + Pickup cup of water with non-toothbrush hand.
+        * Raise cup of water to mouth.
+        * Rinse mouth with water.
+        * Spit water into water faucet.
+        * Put down cup of water.
+    + Raise toothbrush in front of your mouth.
+        * Make sure toothbrush is parallel to your mouth.
+        * Face bristle and toothpaste side of toothbrush to your mouth.
+        * Open your mouth.
+        * Place bristle and toothpaste side of toothbrush on to your front teeth.
+        * Until 3 minutes, continue to move your toothbrush left and right with a little strength.
+            - If teeth becomes painful, use less strength.
+            - If teeth bleeds, use less strength.
+            - Else, continue moving toothbrush left and right.
+        * Remove toothbrush from mouth.
+    + Pickup cup of water with non-toothbrush hand.
+        * Raise cup of water to mouth.
+        * Rinse mouth with water.
+        * Spit water into water faucet.
+        * Put down cup of water.
+    + Congratulate person on learning how to brush his/her teeth.
