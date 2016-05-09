@@ -9,14 +9,18 @@ puts "What year were you born?"
 
 puts "Our company cafeteria serves garlic bread. Should we order some for you (y/n)?"
   garlic = gets.chomp
-  
+
 puts "Would you like to enroll to the company's health insurance (y/n)?"
   insurance = gets.chomp
 
-if (age == 2016 - year) && (garlic == "yes" || insurance == "yes")
-  puts "Probably not a vampire."
+if name == "Drake Cula" || name == "Tu Fang"
+  puts "Definitely a vampire."
+elsif (age != 2016 - year) && (garlic == "no" && insurance == "no")
+  puts "Almost certainly a vampire."
 elsif (age != 2016 - year) && (garlic == "no" || insurance == "no")
   puts "Probably a vampire."
+elsif (age == 2016 - year) && (garlic == "yes" || insurance == "yes")
+  puts "Probably not a vampire."
 else
   puts "Results inconclusive."
 end
