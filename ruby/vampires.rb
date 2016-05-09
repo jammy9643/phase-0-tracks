@@ -41,3 +41,5 @@ until allergy == "sunshine" || allergy == "done"
       puts "Probably a vampire." 
     end
 end
+
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
