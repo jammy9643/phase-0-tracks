@@ -1,7 +1,7 @@
 puts "How many employees will be processed?"
-  employees = gets.chomp.to_i
+  employee = gets.chomp.to_i
 
-until employees == 0
+until employee == 0
   puts "What is your name?"
     name = gets.chomp
 
@@ -29,5 +29,15 @@ until employees == 0
     puts "Results inconclusive."
   end
 
-  employees -= 1
+  employee -= 1
+end
+
+allergy = ""
+
+until allergy == "sunshine" || allergy == "done"
+  puts "List an allergy:"
+    allergy = gets.chomp
+    if allergy == "sunshine"
+      puts "Probably a vampire." 
+    end
 end
