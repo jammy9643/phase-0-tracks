@@ -1,43 +1,57 @@
-=begin
-
-Encrypt:
-- create a method that will advance every letter of a string one letter forward
-  - index starts at 0
-  - create 
-
-=end
+# Encrypt
 
 def encrypt(word)
-  index = 0
   secret_code = ""
-  while index < word.length
-    if word[index] == "z"
-      secret_code[index] = "a"
-    else
-      secret_code[index] = word[index].next
+  i = 0
+   while i < word.length
+    if word[i] == "z"
+      secret_code[i] = "a"
+    else 
+      secret_code[i] = word[i].next
     end
-  index += 1
-  end
-  secret_code
+   i += 1
+   end
+   secret_code
 end
-
-puts encrypt("abcdefghijklmnopqrstuvwxyz")
-
-=begin
-
-Decrypt:
-- create a method that will advance every letter of a string one letter forward
-  - index starts at 0
-  - create 
-
-=end
 
 def decrypt(word)
+  i = 0
+  while i < word.length
   
-  while index < secret_code.length
-    secret_code[index] = secret_code[index].next
-    index -= 1
+    if word[i] == "a"
+      word[i] = "z"
+    elsif word[i] == " "
+      word[i] = " "
+    else current = "abcdefghijklmnopqrstuvwxyz".index(word[i])
+      
+      word[i] = "abcdefghijklmnopqrstuvwxyz"[current-1]
+    end
+  i += 1
   end
+  return word
 end
 
-puts encrypt("abcdefghijklmnopqrstuvwxyz")
+
+
+# Decrypt
+
+puts "Hello Agent, would you like to encrypt or decrypt a code?"
+  agentanswer = gets.chomp
+  
+  if agentanswer == "encrypt"
+    puts "what is your message agent?"
+    agentenc = gets.chomp
+     puts encrypt(agentenc)
+  elsif agentanswer == "decrypt"
+    puts "what is your message agent?"
+    agentdec = gets.chomp
+    puts decrypt(agentdec)
+  else
+    puts "INVALID RESPONSE, ALERTING OTHER AGENTS TO ENEMY LOCATION"
+  end
+    
+# puts encrypt("abc")
+# puts encrypt("zed")
+# puts decrypt("bcd")
+# puts decrypt("afe")
+# decrypt(encrypt("swordfish"))
