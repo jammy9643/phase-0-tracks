@@ -1,12 +1,30 @@
 =begin
 
 Interior Designer Client Input Program
-- define method client
+- create empty client hash
   - ask for Name
+    - create key-value pair name & answer
   - ask for Age
-  - ask for Children
+    - make age an integer
+    - create key-value pair age & answer
+  - ask for Children (yes/no)
+    - make children answer all downcase
+    - create key-value pair children & answer
+    - if yes to children, answer is true
+    - else, answer is false
   - ask for Decor Theme
+    - create key-value pair decor & answer
   - ask for Allergies
+    - create key-value pair allergy & answer
+- print client hash
+- ask to change which section
+  - make answer all downcase
+  - save answer in changes variable
+  - if answer is none, print client hash
+  - else, make answer a symbol
+    - ask to state the changes
+    - replace client hash key value with answer
+    - print client hash
 
 =end
 
