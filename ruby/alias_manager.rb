@@ -14,7 +14,11 @@ Fake Name
 
 =end
 
-puts "Name:"
-  name = gets.chomp.downcase.tr('aeiou', 'eioua').tr('bcdfghjklmnpqrstvwxyz', 'cdfghjklmnpqrstvwxyzb').split.map{|spy| spy.capitalize}.reverse.join(' ')
+name = ""
 
-puts name
+until name == "quit" || name == "Raov"
+  puts "Name:"
+    name = gets.chomp.downcase.tr('aeiou', 'eioua').tr('bcdfghjklmnpqrstvwxyz', 'cdfghjklmnpqrstvwxyzb').split.map{|spy| spy.capitalize}.reverse.join(' ')
+
+  puts name
+end
