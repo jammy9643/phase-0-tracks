@@ -21,6 +21,10 @@ class Puppy
     puts blah.downcase.reverse.split('').map{|puppy| puppy.next}.join('').capitalize
   end
 
+  def initialize
+    puts "Initializing new puppy instance..."
+  end
+
 end
 
 puts Puppy.new.fetch("ball")
