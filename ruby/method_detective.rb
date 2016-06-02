@@ -20,7 +20,7 @@
  "the usual" + " suspects".to_s
  "the usual" << " suspects"
  "the usual".insert(-1, " suspects")
-#=> "the usual suspects"
+# => "the usual suspects"
 
  " suspects".insert(0, "the usual")
  " suspects".prepend("the usual")
