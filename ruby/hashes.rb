@@ -2,29 +2,31 @@
 
 Interior Designer Client Input Program
 - create empty client hash
-  - ask for Name
+  - ask for Full Name
     - create key-value pair name & answer
   - ask for Age
     - make age an integer
     - create key-value pair age & answer
-  - ask for Children (yes/no)
-    - make children answer all downcase
+  - ask for How Many Children
+    - make children an integer
     - create key-value pair children & answer
-    - if yes to children, answer is true
-    - else, answer is false
+      - If children == 0, answer is false
+      - Else, answer is true
   - ask for Decor Theme
     - create key-value pair decor & answer
   - ask for Allergies
     - create key-value pair allergy & answer
 - print client hash
-- ask to change which section
+- ask to change which section (state none to exit)
   - make answer all downcase
   - save answer in changes variable
-  - if answer is none, print client hash
-  - else, make answer a symbol
-    - ask to state the changes
-    - replace client hash key value with answer
-    - print client hash
+    - If answer is none, print client hash
+    - Else, make answer a symbol
+      - ask to state the changes
+      - replace client hash key value with answer
+        - If children == 0, answer is false
+        - Else, answer is true
+      - print client hash
 
 =end
 
