@@ -31,17 +31,17 @@ Interior Designer Client Input Program
 
 client = {}
 
-  puts "Name:"
+  puts "Full Name:"
     client[:name] = gets.chomp
   puts "Age:"
     client[:age] = gets.chomp.to_i
-  puts "Children (yes/no):"
-    client[:children] = gets.chomp.downcase
+  puts "How Many Children?"
+    client[:children] = gets.chomp.to_i
 
-    if client[:children] == "yes"
-      client[:children] = true
-    else
+    if client[:children] == 0
       client[:children] = false
+    else
+      client[:children] = true
     end
 
   puts "Decor Theme:"
@@ -51,7 +51,7 @@ client = {}
 
 puts client
 
-puts "Change which section?"
+puts "Change which section (state none to exit)?"
   changes = gets.chomp.downcase
 
   if changes == "none"
@@ -60,5 +60,12 @@ puts "Change which section?"
     changes = changes.to_sym
     puts "State the changes:"
       client[changes] = gets.chomp
+
+    if client[:children] == "0"
+      client[:children] = false
+    else
+      client[:children] = true
+    end
+
     puts client
   end
