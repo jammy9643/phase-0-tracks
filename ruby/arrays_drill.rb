@@ -1,4 +1,5 @@
 #Release 2
+
 #1. 
 def array (x, y, z)
   [x, y, z]
@@ -6,12 +7,13 @@ end
 p array(1,2,3) 
 
 #2.
-def add(arrays, item)
-  arrays << item
+def add(array, item)
+  array << item
 end
 p add(["blue", "red", "orange"], "yellow")
 
 #Release 1
+
 #1.
 ary = Array.new
 p ary
